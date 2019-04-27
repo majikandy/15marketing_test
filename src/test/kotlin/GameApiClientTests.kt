@@ -41,7 +41,7 @@ class GameApiTests {
         }
 
         override fun enter(id: String, guid: String, key: String, platform: String, gameName: String): EnterResponse {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            TODO("not implemented")
         }
     }
 
@@ -59,7 +59,7 @@ class GameApiTests {
         );
 
         override fun getBalance(id: String, guid: String): GetBalanceResponse {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            TODO("not implemented") 
         }
 
         override fun enter(id: String, guid: String, key: String, platform: String, gameName: String): EnterResponse {
