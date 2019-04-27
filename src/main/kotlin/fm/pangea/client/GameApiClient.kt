@@ -4,19 +4,18 @@ import fm.pangea.Protocol
 import fm.pangea.connections.ApiConnection
 import fm.pangea.connections.ConnectionFactory
 
-class GameApiClient(private var connectionFactory: ConnectionFactory) {
-
-    private lateinit var connection: ApiConnection
+class GameApiClient(private val connectionFactory: ConnectionFactory) {
+    private lateinit var apiConnection: ApiConnection
 
     fun connect(protocol: Protocol) {
-        this.connection = this.connectionFactory.Create(protocol);
+        this.apiConnection = this.connectionFactory.Create(protocol);
     }
 
     fun enterGame(id: String, guid: String, key: String, platform: String, gameName: String): EnterResponse {
-        return this.connection.enter(id, guid, key, platform, gameName)
+        return this.apiConnection.enter(id, guid, key, platform, gameName)
     }
 
     fun getBalance(id: String, guid: String): Any {
-        return this.connection.getBalance(id, guid)
+        return this.apiConnection.getBalance(id, guid)
     }
 }
