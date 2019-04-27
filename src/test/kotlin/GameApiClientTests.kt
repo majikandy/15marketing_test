@@ -59,7 +59,7 @@ class GameApiTests {
         );
 
         override fun getBalance(id: String, guid: String): GetBalanceResponse {
-            TODO("not implemented") 
+            TODO("not implemented")
         }
 
         override fun enter(id: String, guid: String, key: String, platform: String, gameName: String): EnterResponse {
