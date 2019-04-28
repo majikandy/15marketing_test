@@ -10,8 +10,9 @@ This project is written in Kotlin and uses gradle for builds
 
 ## To Run Tests
 
+```
 ./gradlew test build --info
-
+```
 (Or import into Intellij IDEA and run Verification -> Tests on the gradle menu)
 
 
