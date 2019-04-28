@@ -3,8 +3,9 @@ import fm.pangea.Protocol
 import fm.pangea.client.*
 import fm.pangea.connections.ApiConnection
 import fm.pangea.connections.ConnectionFactoryImpl
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
+import org.junit.Assert
+
+import org.junit.Test
 import java.util.*
 
 class GameApiTests {
@@ -17,7 +18,7 @@ class GameApiTests {
         gameClient.connect(Protocol.REST)
         val response = gameClient.enterGame("123", "456", "789", "real", "jumpy bird")
 
-        assertEquals(restConnectionMock.fakeEnterResponseOk, response)
+        Assert.assertEquals(restConnectionMock.fakeEnterResponseOk, response)
     }
 
     @Test
@@ -28,7 +29,7 @@ class GameApiTests {
         gameClient.connect(Protocol.SOAP)
         val response = gameClient.getBalance("123","456")
 
-        assertEquals(soapConnectionMock.fakeGetBalanceResponseOk, response)
+        Assert.assertEquals(soapConnectionMock.fakeGetBalanceResponseOk, response)
     }
 
     class SoapConnectionMock : ApiConnection {
