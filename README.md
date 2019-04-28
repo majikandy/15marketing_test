@@ -14,3 +14,18 @@ This project is written in Kotlin and uses gradle for builds
 
 (Or import into Intellij IDEA and run Verification -> Tests on the gradle menu)
 
+
+## View test results with Docker
+
+Considering this is just a coding challenge, instead of hosting the JVM and kotlin app in the container, the dockerfile produces a bare nginx container and hosts the test results
+
+```
+docker build -t majikandy/15marketing_test .
+docker run -p 80:80 majikandy/15marketing_test
+```
+
+Then navigate to http://localhost/TEST-GameApiTests.xml
+
+Note: this could have been done with a multistage build in docker where stage one builds and runs the tests (similar to what travis is doing) and then copies the result into stage 2 nginx image.
+
+
