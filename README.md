@@ -1,4 +1,4 @@
-<img src="https://travis-ci.com/majikandy/15marketing_test.svg?branch=master" alt="build:">
+[![Build Status](https://travis-ci.com/majikandy/15marketing_test.svg?branch=master)](https://travis-ci.com/majikandy/15marketing_test)
 
 ## Sample code demonstrating TDD, DI and mocking
 
