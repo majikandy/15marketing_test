@@ -1,6 +1,6 @@
 <img src="https://travis-ci.com/majikandy/15marketing_test.svg?branch=master" alt="build:">
 
-# Example code for API integration demonstrating TDD, DI and mocking
+## Sample code demonstrating TDD, DI and mocking
 
 Note: only a couple of sample API methods partially modelled
 
