@@ -1,8 +1,14 @@
-# 15marketing_test
+<img src="https://travis-ci.com/majikandy/15marketing_test.svg?branch=master" alt="build:">
 
-Needs the following
+# Example code for API integration demonstrating TDD, DI and mocking
 
-- Dockerisation
-- CI to run tests on all branches
-- CI on develop to dockerise and push to a staging environment
-- CI on master to dockerise and push to container reg
+Note: only a couple of sample API methods partially modelled
+
+This project is written in Kotlin and uses gradle for builds
+
+# To Run Tests
+
+./gradlew test build --info
+
+(Or import into Intellij IDEA and run Verification -> Tests on the gradle menu)
+
